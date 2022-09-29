@@ -1,0 +1,48 @@
+% Document class definition & formatting
+\documentclass{article}
+
+% Set up bibliography
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+% Simple todo command
+% Remove prior to draft status
+\usepackage{xcolor}
+\definecolor{todo-bg-color}{RGB}{213, 236, 255}
+\definecolor{todo-fg-color}{RGB}{118, 0, 123}
+\newcommand\todo[1]{\colorbox{todo-bg-color}{\textcolor{todo-fg-color}{[#1]}}}
+
+% Title layout
+\title{A New Approach to Cubic B\'ezier Offset Curve Development}
+\author{
+	Levien, Raph \\
+	\todo{add title \& affiliation} \\
+	\texttt{raph.levien@gmail.com} \\
+	\and
+	Gibbel, Stephen \\
+	\texttt{steve@gibbel.us}
+}
+
+
+\begin{document}
+\maketitle
+\begin{abstract}
+	A new method for fitting cubic B\'ezier curves is presented, and applied to the development of parallel curves.
+\end{abstract}
+
+\section{Introduction}
+
+\section{Description of Method}
+
+\section{Analytical Evaluation of Method}
+
+\section{Numerical Evaluation of Method}
+
+\section{Comparison with the Current State of The Art}
+
+\section{Summary}
+
+\section{References}
+\printbibliography
+
+\end{document}
